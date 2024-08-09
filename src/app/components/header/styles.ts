@@ -14,14 +14,17 @@ export const HeaderContainer = styled.header`
   color: ${(props) => props.theme.colors.gray[100]};
   padding: 0 4rem;
 
-  a {
+  & > a {
     text-decoration: none;
     color: ${(props) => props.theme.colors.gray[100]};
+    width: 12%;
+    display: flex;
   }
 
-  a > svg {
+  & > a > svg {
     width: 1.2rem;
     height: 1.2rem;
+    margin-left: auto;
   }
 `
 

@@ -8,4 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: var(--font-aboreto);
     -webkit-font-smoothing: antialiased;
   }
+
+  body {
+    overflow-x: hidden;
+  }
 `

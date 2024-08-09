@@ -5,11 +5,11 @@ export const defaultTheme = {
   },
 
   fontSizes: {
-    xsm: 'calc(1 * 1rem)',
-    sm: 'calc(1.1 * 1rem)',
+    xsm: 'calc(0.9 * 1rem)',
+    sm: 'calc(1 * 1rem)',
     md: 'calc(1.2 * 1rem)',
     xmd: 'calc(1.4 * 1rem)',
-    lg: 'calc(2.6 * 1rem)',
+    lg: 'calc(2.1 * 1rem)',
     xlg: 'calc(3.6 * 1rem)',
   },
 
@@ -19,7 +19,7 @@ export const defaultTheme = {
   },
 
   lineHeight: {
-    sm: '1.2rem',
+    sm: '1.4rem',
     md: '1.6rem',
   },
 
