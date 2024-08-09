@@ -9,39 +9,42 @@ export function LatestWorks() {
 
       <LatestWorksContent>
         <Link href="/">
-          <Image
-            src="/assets/latest-work-01.jpeg"
-            width={512}
-            height={705}
-            alt="Latest work"
-            quality={100}
-          />
+          <div>
+            <Image
+              src="/assets/latest-work-01.jpeg"
+              width={1440}
+              height={1800}
+              alt="Latest work"
+            />
 
-          <p>Parklane, a luxury collection resort & spa</p>
+            <p>Parklane, a luxury collection resort & spa</p>
+          </div>
         </Link>
 
         <Link href="/">
-          <Image
-            src="/assets/latest-work-02.jpg"
-            width={512}
-            height={705}
-            alt="Latest work"
-            quality={100}
-          />
+          <div>
+            <Image
+              src="/assets/latest-work-02.jpg"
+              width={2500}
+              height={3125}
+              alt="Latest work"
+            />
 
-          <p>Columbia Beach Resort, small luxury hotels</p>
+            <p>Columbia Beach Resort, small luxury hotels</p>
+          </div>
         </Link>
 
         <Link href="">
-          <Image
-            src="/assets/latest-work-03.jpg"
-            width={512}
-            height={705}
-            alt="Latest work"
-            quality={100}
-          />
+          <div>
+            <Image
+              src="/assets/latest-work-03.jpg"
+              width={2500}
+              height={1563}
+              alt="Latest work"
+            />
 
-          <p>Santre Dolomythic Home</p>
+            <p>Santre Dolomythic Home</p>
+          </div>
         </Link>
       </LatestWorksContent>
     </LatestWorksContainer>

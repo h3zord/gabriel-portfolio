@@ -5,13 +5,14 @@ import { AboutContainer, AboutContent, DescriptionContainer } from './styles'
 export function About() {
   return (
     <AboutContainer>
-      <Image
-        src="/assets/about-image.jpeg"
-        width={544}
-        height={658}
-        alt="About image"
-        quality={100}
-      />
+      <div>
+        <Image
+          src="/assets/about-image.jpeg"
+          width={2500}
+          height={3126}
+          alt="About image"
+        />
+      </div>
 
       <AboutContent>
         <h3>

@@ -9,6 +9,17 @@ export const AboutContainer = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.colors.gray[100]};
   gap: 10rem;
+
+  & > div:first-child {
+    width: 544px;
+    height: 658px;
+  }
+
+  & > div:first-child > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `
 
 export const AboutContent = styled.div`

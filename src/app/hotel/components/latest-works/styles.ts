@@ -23,15 +23,21 @@ export const LatestWorksContent = styled.div`
     text-decoration: none;
   }
 
-  a > img {
-    object-fit: cover;
+  & > a > div {
+    width: 512px;
+    height: 705px;
   }
 
-  a > p {
-    text-decoration: none;
+  & > a > div > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  & > a > div > p {
     color: ${(props) => props.theme.colors.black};
-    margin-top: 1rem;
     font-size: ${(props) => props.theme.fontSizes.md};
+    margin-top: 1rem;
   }
 
   a:hover {
