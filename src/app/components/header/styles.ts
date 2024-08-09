@@ -19,11 +19,12 @@ export const HeaderContainer = styled.header`
     color: ${(props) => props.theme.colors.gray[100]};
     width: 12%;
     display: flex;
+    font-size: ${(props) => props.theme.fontSizes.sm};
   }
 
   & > a > svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.1rem;
+    height: 1.1rem;
     margin-left: auto;
   }
 `

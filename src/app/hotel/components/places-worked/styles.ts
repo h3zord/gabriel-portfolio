@@ -25,7 +25,8 @@ export const PlacesWorkedContainer = styled.section`
 export const PlacesWorkedContent = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  column-gap: 6rem;
+  row-gap: 1.2rem;
 
   & > p {
     text-align: center;
