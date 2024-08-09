@@ -34,7 +34,7 @@ export const defaultTheme = {
 
   colors: {
     gray: {
-      100: '#fafafa',
+      100: '#FAFAFA',
     },
     black: '#000000',
     white: '#FFFFFF',

@@ -2,8 +2,8 @@
 
 import StyledComponentsRegistry from '@/lib/registry'
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyles } from '@/app/styles/global-styles'
-import { defaultTheme } from '@/app/styles/themes/default-theme'
+import { GlobalStyles } from '@/styles/global-styles'
+import { defaultTheme } from '@/styles/themes/default-theme'
 
 export const Providers = ({
   children,

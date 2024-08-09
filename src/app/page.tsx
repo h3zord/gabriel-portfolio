@@ -1,5 +1,5 @@
-import { Container } from './styles'
+import Hotel from './hotel/page'
 
 export default function Home() {
-  return <Container>Toni Fisher</Container>
+  return <Hotel />
 }

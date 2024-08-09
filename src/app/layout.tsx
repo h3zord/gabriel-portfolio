@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Providers } from '@/providers'
 import { Aboreto, Roboto } from 'next/font/google'
+import { Header } from './components/header'
 
 const aboreto = Aboreto({
   subsets: ['latin'],
@@ -27,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aboreto.variable} ${roboto.variable}`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+
+          {children}
+        </Providers>
       </body>
     </html>
   )
