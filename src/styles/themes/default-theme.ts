@@ -5,6 +5,7 @@ export const defaultTheme = {
   },
 
   fontSizes: {
+    xxsm: 'calc(0.75 * 1rem)',
     xsm: 'calc(0.9 * 1rem)',
     sm: 'calc(1 * 1rem)',
     md: 'calc(1.2 * 1rem)',
@@ -35,8 +36,13 @@ export const defaultTheme = {
   colors: {
     gray: {
       100: '#FAFAFA',
+      400: '#9ca3af',
+      700: '#374151',
     },
+
     black: '#000000',
     white: '#FFFFFF',
+
+    error: '#E74C3C',
   },
 }

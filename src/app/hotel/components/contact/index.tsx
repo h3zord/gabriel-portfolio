@@ -1,4 +1,6 @@
-import { ContactButton, ContactContainer, ContactContent } from './styles'
+import { ContactModal } from '@/app/components/contact-modal'
+import { ContactContainer, ContactContent } from './styles'
+import { ContactButton } from '@/app/components/contact-button/styles'
 
 export function Contact() {
   return (
@@ -6,7 +8,9 @@ export function Contact() {
       <ContactContent>
         <h3>Lets get your ideas to life.</h3>
 
-        <ContactButton $buttonTheme="white">Contact Me</ContactButton>
+        <ContactModal>
+          <ContactButton $buttonTheme="white">Contact Me</ContactButton>
+        </ContactModal>
       </ContactContent>
     </ContactContainer>
   )
