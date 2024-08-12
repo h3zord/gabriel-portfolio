@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import * as Dialog from '@radix-ui/react-dialog'
 
 export const Overlay = styled(Dialog.Overlay)`
-  background: rgba(0 0 0 / 0.75);
+  background: rgba(0 0 0 / 0.85);
   position: fixed;
   inset: 0;
   display: grid;
@@ -27,6 +27,7 @@ export const Close = styled(Dialog.Close)`
   right: 20px;
   border: none;
   background-color: transparent;
+  color: ${(props) => props.theme.colors.black};
   line-height: 0;
   cursor: pointer;
 `

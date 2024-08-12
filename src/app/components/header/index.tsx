@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { HeaderContainer, NavContainer, NavLink } from './styles'
+import { HeaderContainer, NavContainer, NavLink, Underlined } from './styles'
 import { FaInstagram } from 'react-icons/fa'
 import { usePathname } from 'next/navigation'
 
@@ -13,11 +13,13 @@ export function Header() {
       <Link href="/">Gabriel Brustolin</Link>
 
       <NavContainer>
-        <NavLink href="/" $isCurrentRoute={pathName === '/'}>
+        <NavLink href="/">
           Hotel Portfolio
+          {pathName === '/' && <Underlined layoutId="underline" />}
         </NavLink>
-        <NavLink href="/travel" $isCurrentRoute={pathName === '/travel'}>
+        <NavLink href="/travel">
           Travel Portfolio
+          {pathName === '/travel' && <Underlined layoutId="underline" />}
         </NavLink>
       </NavContainer>
 

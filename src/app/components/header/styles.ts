@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import styled from 'styled-components'
 
@@ -31,17 +32,20 @@ export const HeaderContainer = styled.header`
 
 export const NavContainer = styled.nav`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 `
 
-export const NavLink = styled(Link)<{ $isCurrentRoute: boolean }>`
+export const NavLink = styled(Link)`
+  position: relative;
   color: ${(props) => props.theme.colors.gray[100]};
   padding: 0.1rem;
   text-decoration: none;
   font-family: ${(props) => props.theme.fonts.secondary};
   font-size: ${(props) => props.theme.fontSizes.sm};
-  border-bottom: ${(props) =>
-    props.$isCurrentRoute
-      ? `1.5px solid ${props.theme.colors.gray[100]}`
-      : 'none'};
+`
+export const Underlined = styled(motion.div)`
+  width: 100%;
+  border-top: 2px solid ${(props) => props.theme.colors.gray[100]};
+  position: absolute;
+  bottom: -5px;
 `

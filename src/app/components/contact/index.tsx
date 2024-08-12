@@ -1,6 +1,6 @@
-import { ContactModal } from '@/app/components/contact-modal'
+import { ContactButton } from './contact-button/styles'
+import { ContactModal } from './contact-modal'
 import { ContactContainer, ContactContent } from './styles'
-import { ContactButton } from '@/app/components/contact-button/styles'
 
 interface ContactTheme {
   contactTheme: 'dark' | 'white'

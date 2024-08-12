@@ -1,8 +1,8 @@
 import { Contact } from '../components/contact'
 import { Footer } from '../components/footer'
-import { About } from './about'
-import { ExploreWork } from './explore-work'
-import { TravelIntroduction } from './travel-introduction'
+import { About } from './components/about'
+import { ExploreWork } from './components/explore-work'
+import { TravelIntroduction } from './components/travel-introduction'
 
 export default function Travel() {
   return (
