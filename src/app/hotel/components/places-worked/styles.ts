@@ -16,6 +16,7 @@ export const PlacesWorkedContainer = styled.section`
 
   & > h3 {
     font-size: ${(props) => props.theme.fontSizes.lg};
+    color: ${(props) => props.theme.colors.white};
     font-weight: ${(props) => props.theme.weight.normal};
     color: ${(props) => props.theme.colors.gray[100]};
     margin-top: 5.8rem;

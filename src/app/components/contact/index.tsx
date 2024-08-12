@@ -2,14 +2,18 @@ import { ContactModal } from '@/app/components/contact-modal'
 import { ContactContainer, ContactContent } from './styles'
 import { ContactButton } from '@/app/components/contact-button/styles'
 
-export function Contact() {
+interface ContactTheme {
+  contactTheme: 'dark' | 'white'
+}
+
+export function Contact({ contactTheme }: ContactTheme) {
   return (
-    <ContactContainer>
+    <ContactContainer $contactTheme={contactTheme}>
       <ContactContent>
-        <h3>Lets get your ideas to life.</h3>
+        <h3>Let’s get your ideas to life.</h3>
 
         <ContactModal>
-          <ContactButton $buttonTheme="white">Contact Me</ContactButton>
+          <ContactButton $buttonTheme={contactTheme}>Contact Me</ContactButton>
         </ContactModal>
       </ContactContent>
     </ContactContainer>

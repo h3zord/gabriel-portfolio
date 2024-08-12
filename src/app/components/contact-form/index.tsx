@@ -6,12 +6,10 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { Dispatch, SetStateAction } from 'react'
 
 const contactFormSchema = z.object({
-  firstName: z
-    .string()
-    .min(3, { message: 'Please provide a valid first name.' }),
-  lastName: z.string().min(3, { message: 'Please provide a valid last name.' }),
+  firstName: z.string().min(3, { message: 'Please provide a valid name.' }),
+  lastName: z.string().min(3, { message: 'Please provide a valid name.' }),
   email: z.string().email({ message: 'Please provide a valid email.' }),
-  subject: z.string().min(3, { message: 'Plase provide a valid subject.' }),
+  subject: z.string().min(3, { message: 'Please provide a valid subject.' }),
   message: z.string().min(3, { message: 'Please provide a valid message.' }),
 })
 
@@ -55,7 +53,7 @@ export function ContactForm({ setOpen }: ContactFormProps) {
         <p>
           Name
           <span>(required)</span>
-          {(errors.firstName || !errors.lastName) && (
+          {(errors.firstName || errors.lastName) && (
             <ErrorContainer>
               {errors.firstName?.message || errors.lastName?.message}
             </ErrorContainer>

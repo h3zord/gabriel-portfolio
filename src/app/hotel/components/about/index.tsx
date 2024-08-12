@@ -7,7 +7,7 @@ export function About() {
     <AboutContainer>
       <div>
         <Image
-          src="/assets/about-image.jpeg"
+          src="/assets/about-image-hotel.jpeg"
           width={2500}
           height={3126}
           alt="About image"

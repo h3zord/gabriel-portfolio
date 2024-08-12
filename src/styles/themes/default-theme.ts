@@ -11,7 +11,7 @@ export const defaultTheme = {
     md: 'calc(1.2 * 1rem)',
     xmd: 'calc(1.4 * 1rem)',
     lg: 'calc(2.1 * 1rem)',
-    xlg: 'calc(3.6 * 1rem)',
+    xlg: 'calc(2.8 * 1rem)',
   },
 
   weight: {
