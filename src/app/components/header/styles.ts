@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header<{ $headerTheme?: 'dark' }>`
   position: absolute;
   z-index: 9999;
   top: 0;
@@ -13,36 +13,43 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: ${(props) => props.theme.colors.gray[100]};
   padding: 0 4rem;
+  color: ${(props) =>
+    props.$headerTheme === 'dark'
+      ? props.theme.colors.black
+      : props.theme.colors.gray[100]};
 
   & > a {
-    text-decoration: none;
-    color: ${(props) => props.theme.colors.gray[100]};
-    width: 12%;
+    all: unset;
+    width: 10.5%;
     display: flex;
     font-size: ${(props) => props.theme.fontSizes.sm};
+
+    &:nth-child(1) {
+      cursor: pointer;
+    }
   }
 
   & > a > svg {
-    width: 1.1rem;
-    height: 1.1rem;
     margin-left: auto;
+    cursor: pointer;
   }
 `
 
 export const NavContainer = styled.nav`
   display: flex;
   gap: 2rem;
+  color: inherit;
 `
 
 export const NavLink = styled(Link)`
+  all: unset;
   position: relative;
-  color: ${(props) => props.theme.colors.gray[100]};
-  text-decoration: none;
   font-family: ${(props) => props.theme.fonts.secondary};
   font-size: ${(props) => props.theme.fontSizes.sm};
+  cursor: pointer;
 `
+
 export const Underlined = styled(motion.div)`
   width: 100%;
   border-top: 2px solid ${(props) => props.theme.colors.gray[100]};

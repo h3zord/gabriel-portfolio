@@ -25,9 +25,4 @@ export const FooterContainer = styled.footer`
     font-size: ${(props) => props.theme.fontSizes.xsm};
     line-height: 0;
   }
-
-  & > a > svg {
-    width: 1.1rem;
-    height: 1.1rem;
-  }
 `

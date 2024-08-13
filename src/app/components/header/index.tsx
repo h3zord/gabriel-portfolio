@@ -8,8 +8,13 @@ import { usePathname } from 'next/navigation'
 export function Header() {
   const pathName = usePathname()
 
+  const isImprintRoute = pathName === '/imprint'
+  const isDataSecurityRoute = pathName === '/data-security'
+
   return (
-    <HeaderContainer>
+    <HeaderContainer
+      $headerTheme={isImprintRoute || isDataSecurityRoute ? 'dark' : undefined}
+    >
       <Link href="/">Gabriel Brustolin</Link>
 
       <NavContainer>
@@ -24,7 +29,7 @@ export function Header() {
       </NavContainer>
 
       <Link href="https://www.instagram.com/gabzieg/" target="_blank">
-        <FaInstagram />
+        <FaInstagram size={20} />
       </Link>
     </HeaderContainer>
   )
