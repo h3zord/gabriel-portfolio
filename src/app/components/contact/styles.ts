@@ -7,7 +7,7 @@ export const ContactContainer = styled.section<{
 }>`
   height: 18rem;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   color: ${(props) =>
     props.$contactTheme === 'dark'
@@ -26,9 +26,9 @@ export const ContactContent = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 1.7rem;
+  margin-bottom: 2.5rem;
 
   & > h3 {
-    margin-top: 2.5rem;
     font-weight: ${(props) => props.theme.weight.normal};
     font-size: ${(props) => props.theme.fontSizes.xlg};
     text-align: center;

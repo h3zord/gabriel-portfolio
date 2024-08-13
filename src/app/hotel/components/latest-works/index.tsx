@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { LatestWorksContainer, LatestWorksContent } from './styles'
-import { lastestWork } from '@/data'
+import { latestWorks } from '@/data'
 
 export function LatestWorks() {
   return (
@@ -9,7 +9,7 @@ export function LatestWorks() {
       <h3>Our Latest Work</h3>
 
       <LatestWorksContent>
-        {lastestWork.map((work) => (
+        {latestWorks.map((work) => (
           <Link href={`/hotel/${work.id}`} key={work.id}>
             <div>
               <Image

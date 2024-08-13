@@ -18,14 +18,13 @@ export const Content = styled(Dialog.Content)`
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  color: white;
   padding: 4rem;
 `
 
 export const Close = styled(Dialog.Close)`
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 25px;
+  right: 25px;
   border: none;
   background-color: transparent;
   color: ${(props) => props.theme.colors.gray[400]};

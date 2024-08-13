@@ -16,6 +16,11 @@ export const ExploreWorkContent = styled.div`
   justify-items: center;
   gap: 1.2rem;
 
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+
   & > div > img {
     width: 100%;
     height: 100%;

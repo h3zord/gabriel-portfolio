@@ -15,23 +15,25 @@ export const LatestWorksContainer = styled.section`
 
 export const LatestWorksContent = styled.div`
   margin-top: 4rem;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
 
-  & > a {
-    text-decoration: none;
+  a {
+    all: unset;
+    cursor: pointer;
   }
 
   & > a > div {
-    width: 512px;
-    height: 705px;
+    width: 100%;
+    height: 100%;
   }
 
   & > a > div > img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   & > a > div > p {

@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   position: absolute;
+  z-index: 9999;
   top: 0;
   width: 100vw;
   height: 6.5rem;
@@ -38,7 +39,6 @@ export const NavContainer = styled.nav`
 export const NavLink = styled(Link)`
   position: relative;
   color: ${(props) => props.theme.colors.gray[100]};
-  padding: 0.1rem;
   text-decoration: none;
   font-family: ${(props) => props.theme.fonts.secondary};
   font-size: ${(props) => props.theme.fontSizes.sm};
