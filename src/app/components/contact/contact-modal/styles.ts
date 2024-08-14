@@ -27,9 +27,13 @@ export const Close = styled(Dialog.Close)`
   right: 20px;
   border: none;
   background-color: transparent;
-  color: ${(props) => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.gray[700]};
   line-height: 0;
   cursor: pointer;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.black};
+  }
 `
 
 export const Title = styled(Dialog.Title)`

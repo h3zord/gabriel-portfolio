@@ -5,7 +5,7 @@ export function HotelIntroduction() {
   return (
     <HeroImageHotel>
       <Image
-        src="/assets/hotel-introduction.jpg"
+        src="/assets/hotel-introduction.webp"
         width={2500}
         height={1563}
         alt="Hotel introduction image"

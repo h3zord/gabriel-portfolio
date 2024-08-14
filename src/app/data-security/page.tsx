@@ -1,4 +1,9 @@
+import { Metadata } from 'next'
 import { DataSecurityContainer, DataSecurityContent } from './styles'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+}
 
 export default function DataSecurity() {
   return (

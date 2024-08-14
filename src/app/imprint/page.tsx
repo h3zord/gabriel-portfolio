@@ -1,4 +1,9 @@
+import { Metadata } from 'next'
 import { ImprintContainer, ImprintContent } from './styles'
+
+export const metadata: Metadata = {
+  title: 'Imprint',
+}
 
 export default function Imprint() {
   return (

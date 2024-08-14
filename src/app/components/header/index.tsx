@@ -15,12 +15,12 @@ export function Header() {
     <HeaderContainer
       $headerTheme={isImprintRoute || isDataSecurityRoute ? 'dark' : undefined}
     >
-      <Link href="/">Gabriel Brustolin</Link>
+      <Link href="/hotel">Gabriel Brustolin</Link>
 
       <NavContainer>
-        <NavLink href="/">
+        <NavLink href="/hotel">
           Hotel Portfolio
-          {pathName === '/' && <Underlined layoutId="underline" />}
+          {pathName === '/hotel' && <Underlined layoutId="underline" />}
         </NavLink>
         <NavLink href="/travel">
           Travel Portfolio

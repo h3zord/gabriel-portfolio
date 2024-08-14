@@ -4,6 +4,11 @@ import { LatestWorks } from './components/latest-works'
 import { PlacesWorked } from './components/places-worked'
 import { Contact } from '../components/contact'
 import { Footer } from '../components/footer'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Hotel',
+}
 
 export default function Hotel() {
   return (

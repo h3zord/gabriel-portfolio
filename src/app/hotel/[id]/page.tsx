@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { latestWorks } from '@/data'
 import { Footer } from '@/app/components/footer'
 import { GrNext, GrPrevious } from 'react-icons/gr'
+import { Metadata } from 'next'
 import {
   LatestWorkButtonsContainer,
   LatestWorkDetailsContainer,
@@ -10,15 +11,23 @@ import {
   LatestWorkPicturesContainer,
 } from './styles'
 
-interface LatestWorkDetailsProps {
+interface GenerateMetadataProps {
   params: {
     id: string
   }
 }
 
-export default function LatestWorkDetails({ params }: LatestWorkDetailsProps) {
-  // const latestWorks = api
+export function generateMetadata({ params }: GenerateMetadataProps): Metadata {
+  const latestWork = latestWorks.find((work) => work.id === params.id)
 
+  return {
+    title: latestWork?.title,
+  }
+}
+
+interface LatestWorkDetailsProps extends GenerateMetadataProps {}
+
+export default function LatestWorkDetails({ params }: LatestWorkDetailsProps) {
   const latestWorkIndex = latestWorks.findIndex((work) => work.id === params.id)
 
   const findedLatestWork = latestWorks[latestWorkIndex]
