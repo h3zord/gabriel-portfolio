@@ -20,11 +20,11 @@ export function Header() {
       <NavContainer>
         <NavLink href="/hotel">
           Hotel Portfolio
-          {pathName === '/hotel' && <Underlined layoutId="underline" />}
+          {pathName.includes('/hotel') && <Underlined layoutId="underline" />}
         </NavLink>
         <NavLink href="/travel">
           Travel Portfolio
-          {pathName === '/travel' && <Underlined layoutId="underline" />}
+          {pathName.includes('/travel') && <Underlined layoutId="underline" />}
         </NavLink>
       </NavContainer>
 
