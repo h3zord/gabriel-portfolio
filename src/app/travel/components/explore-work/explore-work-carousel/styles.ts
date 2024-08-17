@@ -38,6 +38,7 @@ export const CarouselButtons = styled.button<{ $direction: 'prev' | 'next' }>`
   background-color: transparent;
   color: ${(props) => props.theme.colors.gray[400]};
   border: none;
+  line-height: 0;
   cursor: pointer;
 
   &:hover {

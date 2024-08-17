@@ -5,10 +5,11 @@ export function TravelIntroduction() {
   return (
     <HeroImageTravel>
       <Image
-        src="/assets/travel-introduction.webp"
-        width={2500}
-        height={1563}
+        src="/assets/travel-introduction.jpeg"
+        width={6000}
+        height={4000}
         alt="Travel introduction image"
+        quality={100}
         priority
       />
     </HeroImageTravel>

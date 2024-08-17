@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const HeroImageHotel = styled.main`
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
 
   & > img {
     width: 100%;

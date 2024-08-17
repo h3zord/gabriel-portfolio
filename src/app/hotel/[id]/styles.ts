@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export const LatestWorkDetailsContainer = styled.main`
   width: 100vw;
-  background-color: ${(props) => props.theme.colors.gray[100]};
+  background-color: ${(props) => props.theme.colors.white};
 `
 
 export const LatestWorkDetailsCover = styled.div`
@@ -16,7 +16,6 @@ export const LatestWorkDetailsCover = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 75.2094011751469%;
     filter: brightness(0.7);
   }
 

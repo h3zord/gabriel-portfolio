@@ -10,38 +10,43 @@ export function About() {
 
         <DescriptionContainer>
           <p>
-            Even though I find myself more often either at the beach or on top
-            of a mountain, I’m always looking for a new adventure to capture. My
-            name is Toni Fischer, and four years ago, I embarked on a journey
-            that would forever change my life. Traveling opened my eyes to the
-            beauty of new destinations, the serenity of untouched landscapes,
-            and the unique stories of people from all walks of life.
+            I have lived in the countryside my entire life, always seeking new
+            adventures to connect with the world around me. My name is Gabriel
+            Brustolin, and this year I made a decision that will change my life
+            forever: to embark on a journey of travel that has opened my eyes to
+            the vastness and beauty of our planet. Each trip gives me the
+            opportunity to experience the tranquility of the landscapes and to
+            learn about the culture of a place through its people, which
+            inspires me to continue exploring and discovering new horizons.
           </p>
 
           <p>
-            Specializing in landscape, nature, and hotel photography, I strive
-            to bring each scene to life through my lens. My work aims to evoke
-            the same awe and wonder I feel when exploring a hidden beach or
-            climbing to a mountain peak. With a creative approach to photography
-            & videography, I create visual narratives that resonate with viewers
-            and transport them to the very locations I explore.
+            Our travel portfolio is dedicated to creating high-quality visual
+            content, including photos and videos that capture the essence of
+            each destination. I specialize in stunning landscapes, lush nature,
+            and the welcoming atmosphere of unique hotels and accommodations. My
+            goal is to convey, through my lens, the same enchantment and wonder
+            that I feel when exploring a hidden beach or climbing a mountain
+            peak. With a creative and authentic approach, I create visual
+            narratives that resonate with audiences and transport each viewer to
+            the places I visit.
           </p>
 
           <p>
-            So far I’ve had the pleasure of working with renowned brands such as
-            Roadsurfer and Futurismo Azores. Additionally, I was able to work
-            with properties from the Luxury Collection and Small Luxury Hotels
-            of the World, showcasing the allure of diverse destinations and
-            experiences.
+            Each project is a new opportunity to show the world the beauty that
+            exists out there and inspire others to embark on their own
+            adventures. Join me on this journey and let my photos and videos
+            bring a little of that magic to your social media, awakening in
+            everyone the desire to explore the unknown.
           </p>
         </DescriptionContainer>
       </AboutContent>
 
       <div>
         <Image
-          src="/assets/about-image-travel.jpg"
-          width={2500}
-          height={3125}
+          src="/assets/about-image-travel.jpeg"
+          width={3024}
+          height={4032}
           alt="About image"
         />
       </div>

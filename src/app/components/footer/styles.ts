@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   height: 11rem;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.gray[100]};
   display: flex;
   align-items: center;
   justify-content: space-evenly;

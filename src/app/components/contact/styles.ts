@@ -17,7 +17,7 @@ export const ContactContainer = styled.section<{
   background-color: ${(props) =>
     props.$contactTheme === 'dark'
       ? props.theme.colors.black
-      : props.theme.colors.gray[100]};
+      : props.theme.colors.white};
 `
 
 export const ContactContent = styled.div`
