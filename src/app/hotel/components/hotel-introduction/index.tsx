@@ -10,7 +10,6 @@ export function HotelIntroduction() {
         height={2688}
         alt="Hotel introduction image"
         priority
-        quality={100}
       />
     </HeroImageHotel>
   )
