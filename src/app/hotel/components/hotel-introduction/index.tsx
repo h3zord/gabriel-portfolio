@@ -6,10 +6,9 @@ export function HotelIntroduction() {
     <HeroImageHotel>
       <Image
         src="/assets/hotel-introduction.jpeg"
-        width={5568}
-        height={4872}
+        width={3072}
+        height={2688}
         alt="Hotel introduction image"
-        quality={100}
         priority
       />
     </HeroImageHotel>

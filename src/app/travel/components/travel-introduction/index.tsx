@@ -9,7 +9,6 @@ export function TravelIntroduction() {
         width={6000}
         height={4000}
         alt="Travel introduction image"
-        quality={100}
         priority
       />
     </HeroImageTravel>

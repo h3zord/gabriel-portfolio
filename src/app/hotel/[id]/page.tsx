@@ -39,6 +39,20 @@ export default function LatestWorkDetails({ params }: LatestWorkDetailsProps) {
   const prevLatestWork = latestWorks[latestWorkIndex - 1]
   const nextLatestWork = latestWorks[latestWorkIndex + 1]
 
+  let styles = {}
+
+  if (params.id === '1') {
+    styles = {
+      objectPosition: '50% 47%',
+    }
+  }
+
+  if (params.id === '3') {
+    styles = {
+      objectPosition: '50% 80%',
+    }
+  }
+
   return (
     <LatestWorkDetailsContainer>
       <LatestWorkDetailsCover>
@@ -48,6 +62,7 @@ export default function LatestWorkDetails({ params }: LatestWorkDetailsProps) {
           height={findedLatestWork?.mainPicture?.height}
           alt="Latest work main picture"
           priority
+          style={styles}
         />
 
         <h3>{findedLatestWork?.title}</h3>
