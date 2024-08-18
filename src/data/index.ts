@@ -14,8 +14,8 @@ export const exploreWork = [
   {
     id: '3',
     path: '/assets/explore-work/explore-work-03.jpeg',
-    width: 1536,
-    height: 2048,
+    width: 2902,
+    height: 3869,
   },
   {
     id: '4',
@@ -26,20 +26,20 @@ export const exploreWork = [
   {
     id: '5',
     path: '/assets/explore-work/explore-work-05.jpeg',
-    width: 1536,
-    height: 2048,
+    width: 3024,
+    height: 4032,
   },
   {
     id: '6',
     path: '/assets/explore-work/explore-work-06.jpeg',
-    width: 1154,
-    height: 2048,
+    width: 1290,
+    height: 2289,
   },
   {
     id: '7',
     path: '/assets/explore-work/explore-work-07.jpeg',
-    width: 1536,
-    height: 2048,
+    width: 6048,
+    height: 8064,
   },
 ]
 
@@ -49,8 +49,8 @@ export const latestWorks = [
     title: 'Rio Pedrinho Farm, Turvo',
     coverPicture: {
       path: '/assets/latest-work/pedrinho-river-farm/latest-work-01-cover.jpeg',
-      width: 1536,
-      height: 2048,
+      width: 3024,
+      height: 4032,
     },
     mainPicture: {
       path: '/assets/latest-work/pedrinho-river-farm/latest-work-01-main.jpeg',
@@ -65,8 +65,8 @@ export const latestWorks = [
       },
       {
         path: '/assets/latest-work/pedrinho-river-farm/pedrinho-river-farm-02.jpeg',
-        width: 1536,
-        height: 2048,
+        width: 3024,
+        height: 4032,
       },
       {
         path: '/assets/latest-work/pedrinho-river-farm/pedrinho-river-farm-03.jpeg',
@@ -95,8 +95,8 @@ export const latestWorks = [
     title: 'Abelana River Lodge, Phalaborwa',
     coverPicture: {
       path: '/assets/latest-work/abelana-river-lodge/latest-work-02-cover.jpeg',
-      width: 1365,
-      height: 2048,
+      width: 4000,
+      height: 6000,
     },
     mainPicture: {
       path: '/assets/latest-work/abelana-river-lodge/latest-work-02-main.jpeg',
@@ -167,8 +167,8 @@ export const latestWorks = [
       },
       {
         path: '/assets/latest-work/vila-do-junco/vila-do-junco-04.jpeg',
-        width: 1163,
-        height: 2048,
+        width: 1285,
+        height: 2262,
       },
       {
         path: '/assets/latest-work/vila-do-junco/vila-do-junco-05.jpeg',
