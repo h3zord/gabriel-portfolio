@@ -62,6 +62,7 @@ export default function LatestWorkDetails({ params }: LatestWorkDetailsProps) {
           height={findedLatestWork?.mainPicture?.height}
           alt="Latest work main picture"
           priority
+          quality={100}
           style={styles}
         />
 
