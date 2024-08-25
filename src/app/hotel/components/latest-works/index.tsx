@@ -11,16 +11,14 @@ export function LatestWorks() {
       <LatestWorksContent>
         {latestWorks.map((work) => (
           <Link href={`/hotel/${work.id}`} key={work.id}>
-            <div>
-              <Image
-                src={work.coverPicture.path}
-                width={work.coverPicture.width}
-                height={work.coverPicture.height}
-                alt="Latest work"
-              />
+            <Image
+              src={work.coverPicture.path}
+              width={work.coverPicture.width}
+              height={work.coverPicture.height}
+              alt="Latest work"
+            />
 
-              <p>{work.title}</p>
-            </div>
+            <p>{work.title}</p>
           </Link>
         ))}
       </LatestWorksContent>

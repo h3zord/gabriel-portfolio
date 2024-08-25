@@ -6,10 +6,17 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-aboreto);
+  }
+
+  html {
     -webkit-font-smoothing: antialiased;
   }
 
   body {
     overflow-x: hidden;
+  }
+
+  a {
+    all: unset;
   }
 `

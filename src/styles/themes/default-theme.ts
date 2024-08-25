@@ -10,6 +10,7 @@ export const defaultTheme = {
     sm: 'calc(1 * 1rem)',
     md: 'calc(1.2 * 1rem)',
     xmd: 'calc(1.4 * 1rem)',
+    xxmd: 'calc(1.7 * 1rem)',
     lg: 'calc(2.1 * 1rem)',
     xlg: 'calc(2.8 * 1rem)',
   },

@@ -4,35 +4,47 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header<{ $headerTheme?: 'dark' }>`
+export const HeaderContainer = styled.header<{
+  $headerTheme: 'dark' | 'white'
+}>`
   position: absolute;
   z-index: 9999;
-  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
-  height: 6.5rem;
+  max-width: 110rem;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4rem;
+  padding: 2.5rem 4rem;
+
   color: ${(props) =>
     props.$headerTheme === 'dark'
       ? props.theme.colors.black
       : props.theme.colors.gray[100]};
 
   & > a {
-    all: unset;
-    width: 10.5%;
     display: flex;
+    width: 10.5rem;
     font-size: ${(props) => props.theme.fontSizes.sm};
 
     &:nth-child(1) {
       cursor: pointer;
     }
+
+    &:nth-child(3) > svg {
+      margin-left: auto;
+      cursor: pointer;
+    }
   }
 
-  & > a > svg {
-    margin-left: auto;
-    cursor: pointer;
+  @media (max-width: 62.5rem) {
+    padding: 2.5rem 3rem;
+
+    & > a:nth-child(3) {
+      display: none;
+    }
   }
 `
 
@@ -40,10 +52,13 @@ export const NavContainer = styled.nav`
   display: flex;
   gap: 2rem;
   color: inherit;
+
+  @media (max-width: 62.5rem) {
+    display: none;
+  }
 `
 
 export const NavLink = styled(Link)`
-  all: unset;
   position: relative;
   font-family: ${(props) => props.theme.fonts.secondary};
   font-size: ${(props) => props.theme.fontSizes.sm};
@@ -55,4 +70,32 @@ export const Underlined = styled(motion.div)`
   border-top: 2px solid ${(props) => props.theme.colors.gray[100]};
   position: absolute;
   bottom: -5px;
+`
+
+export const BurguerButton = styled.button`
+  background: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  gap: 0.25rem;
+
+  & > span {
+    width: 30px;
+    height: 3px;
+    background-color: ${(props) => props.theme.colors.gray[100]};
+  }
+
+  & > svg {
+    color: ${(props) => props.theme.colors.black};
+  }
+
+  @media (min-width: 62.5rem) {
+    display: none;
+  }
 `

@@ -70,14 +70,13 @@ export default function LatestWorkDetails({ params }: LatestWorkDetailsProps) {
 
       <LatestWorkPicturesContainer>
         {findedLatestWork?.pictureList?.map((picture) => (
-          <div key={picture.path}>
-            <Image
-              src={picture.path}
-              width={picture.width}
-              height={picture.height}
-              alt="Latest work pictures"
-            />
-          </div>
+          <Image
+            key={picture.path}
+            src={picture.path}
+            width={picture.width}
+            height={picture.height}
+            alt="Latest work pictures"
+          />
         ))}
       </LatestWorkPicturesContainer>
 

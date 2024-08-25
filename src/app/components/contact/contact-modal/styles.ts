@@ -17,8 +17,14 @@ export const Content = styled(Dialog.Content)`
   left: 50%;
   transform: translate(-50%, -50%);
   width: 42rem;
-  background-color: ${(props) => props.theme.colors.white};
   padding: 2.5rem;
+  background-color: ${(props) => props.theme.colors.white};
+
+  @media (max-width: 750px) {
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+  }
 `
 
 export const Close = styled(Dialog.Close)`

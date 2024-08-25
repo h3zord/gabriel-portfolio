@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import { AboutContainer, AboutContent, DescriptionContainer } from './styles'
 
@@ -45,8 +44,8 @@ export function About() {
       <div>
         <Image
           src="/assets/about-image-travel.jpeg"
-          width={3024}
-          height={4032}
+          width={1536}
+          height={2048}
           alt="About image"
         />
       </div>

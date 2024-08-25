@@ -6,7 +6,7 @@ export const ContactFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   margin-top: 3.5rem;
-  gap: 1rem;
+  gap: 1.5rem;
 
   & > div > p {
     font-family: ${(props) => props.theme.fonts.secondary};
@@ -26,29 +26,39 @@ export const ContactFormContainer = styled.form`
   & > div > div {
     display: flex;
     gap: 0.5rem;
-  }
 
-  label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-family: ${(props) => props.theme.fonts.secondary};
-    font-size: ${(props) => props.theme.fontSizes.xxsm};
-    width: 100%;
-    margin-top: 0.5rem;
+    & > label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-family: ${(props) => props.theme.fonts.secondary};
+      font-size: ${(props) => props.theme.fontSizes.xxsm};
+      width: 100%;
+      margin-top: 0.5rem;
+    }
   }
 
   input,
   textarea {
     width: 100%;
-    border: 1px solid ${(props) => props.theme.colors.gray[400]};
     padding: 1rem;
+    border: 1px solid ${(props) => props.theme.colors.gray[400]};
     font-family: ${(props) => props.theme.fonts.secondary};
     background-color: ${(props) => props.theme.colors.gray[100]};
   }
 
-  button {
+  & > button {
     margin: 0 auto;
+  }
+
+  @media (max-width: 750px) {
+    & > div > div {
+      flex-direction: column;
+    }
+
+    textarea {
+      height: 9rem;
+    }
   }
 `
 export const ErrorContainer = styled.div`

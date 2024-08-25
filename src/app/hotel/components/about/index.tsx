@@ -7,8 +7,8 @@ export function About() {
       <div>
         <Image
           src="/assets/about-image-hotel.jpeg"
-          width={6048}
-          height={8064}
+          width={1536}
+          height={2048}
           alt="About image"
         />
       </div>

@@ -1,19 +1,36 @@
 'use client'
 
 import Link from 'next/link'
-import { HeaderContainer, NavContainer, NavLink, Underlined } from './styles'
 import { FaInstagram } from 'react-icons/fa'
 import { usePathname } from 'next/navigation'
+import { BurguerMenu } from './burguer-menu'
+import { useState } from 'react'
+import { IoClose } from 'react-icons/io5'
+import {
+  BurguerButton,
+  HeaderContainer,
+  NavContainer,
+  NavLink,
+  Underlined,
+} from './styles'
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
   const pathName = usePathname()
 
   const isImprintRoute = pathName === '/imprint'
   const isDataSecurityRoute = pathName === '/data-security'
 
+  function handleBurguerButton() {
+    setIsOpen((prevState) => !prevState)
+  }
+
   return (
     <HeaderContainer
-      $headerTheme={isImprintRoute || isDataSecurityRoute ? 'dark' : undefined}
+      $headerTheme={
+        isImprintRoute || isDataSecurityRoute || isOpen ? 'dark' : 'white'
+      }
     >
       <Link href="/hotel">Gabriel Brustolin</Link>
 
@@ -22,6 +39,7 @@ export function Header() {
           Hotel Portfolio
           {pathName.includes('/hotel') && <Underlined layoutId="underline" />}
         </NavLink>
+
         <NavLink href="/travel">
           Travel Portfolio
           {pathName.includes('/travel') && <Underlined layoutId="underline" />}
@@ -31,6 +49,20 @@ export function Header() {
       <Link href="https://www.instagram.com/gabzieg/" target="_blank">
         <FaInstagram size={20} />
       </Link>
+
+      <BurguerMenu isOpen={isOpen} setIsOpen={setIsOpen}>
+        <BurguerButton onClick={handleBurguerButton}>
+          {isOpen ? (
+            <IoClose size={34} />
+          ) : (
+            <>
+              <span />
+              <span />
+              <span />
+            </>
+          )}
+        </BurguerButton>
+      </BurguerMenu>
     </HeaderContainer>
   )
 }

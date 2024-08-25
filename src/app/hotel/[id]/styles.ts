@@ -19,57 +19,85 @@ export const LatestWorkDetailsCover = styled.div`
     filter: brightness(0.7);
   }
 
-  h3 {
+  & > h3 {
     position: absolute;
-    top: 38vh;
-    left: 15vw;
+    top: 40vh;
+    left: 10vw;
     color: ${(props) => props.theme.colors.white};
     font-size: ${(props) => props.theme.fontSizes.lg};
     font-weight: ${(props) => props.theme.weight.normal};
-    width: 27vw;
+    max-width: 25rem;
+  }
+
+  @media (max-width: 768px) {
+    & > h3 {
+      font-size: ${(props) => props.theme.fontSizes.xxmd};
+      left: 5vw;
+    }
+  }
+
+  @media (max-width: 750px) {
+    & > h3 {
+      max-width: 85vw;
+    }
   }
 `
 
 export const LatestWorkPicturesContainer = styled.section`
-  padding: 3rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
-  & > div {
-    width: 100%;
-    height: 100%;
-  }
-
-  & > div > img {
+  & > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
 `
 export const LatestWorkButtonsContainer = styled.div`
-  margin-top: 2rem;
-  margin: 3rem;
   display: flex;
+  padding: 3.5rem 2rem;
   align-items: center;
-`
-export const LatestWorkLink = styled(Link)<{ $direction: 'prev' | 'next' }>`
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: ${(props) =>
-    props.$direction === 'prev' ? 'flex-start' : 'flex-end'};
-  margin-left: ${(props) => (props.$direction === 'next' ? 'auto' : 0)};
-  margin-right: ${(props) => (props.$direction === 'prev' ? 'auto' : 0)};
-  text-align: ${(props) => (props.$direction === 'prev' ? 'start' : 'end')};
-  max-width: 45%;
-  gap: 1rem;
+  justify-content: space-between;
   font-size: ${(props) => props.theme.fontSizes.lg};
   font-weight: ${(props) => props.theme.weight.normal};
+
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.theme.fontSizes.xmd};
+    padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 750px) {
+    font-size: ${(props) => props.theme.fontSizes.md};
+    padding: 2rem 1rem;
+  }
+`
+export const LatestWorkLink = styled(Link)<{ $direction: 'prev' | 'next' }>`
+  display: flex;
+  margin: 0 0.25rem;
+  align-items: center;
+  max-width: 47.5%;
+  gap: 0.5rem;
   cursor: pointer;
+  align-items: center;
   color: ${(props) => props.theme.colors.gray[700]};
+  text-align: ${(props) => (props.$direction === 'prev' ? 'start' : 'end')};
+  margin-left: ${(props) => (props.$direction === 'next' ? 'auto' : 0)};
 
   &:hover {
     color: ${(props) => props.theme.colors.black};
+  }
+
+  @media (max-width: 768px) {
+    & > svg {
+      min-width: 24px;
+    }
   }
 `
