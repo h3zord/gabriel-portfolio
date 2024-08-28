@@ -1,14 +1,18 @@
+'use client'
+
 import Image from 'next/image'
 import { HeroImageTravel } from './styles'
+import { imageKitLoader } from '@/utils/image-kit'
 
 export function TravelIntroduction() {
   return (
     <HeroImageTravel>
       <Image
-        src="/assets/travel-introduction.jpeg"
-        width={6000}
-        height={4000}
+        loader={imageKitLoader}
+        src="travel-introduction-hero.jpg"
+        fill
         alt="Travel introduction image"
+        sizes="100vw"
         priority
       />
     </HeroImageTravel>

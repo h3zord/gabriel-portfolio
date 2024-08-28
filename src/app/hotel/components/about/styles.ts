@@ -8,19 +8,20 @@ export const AboutContainer = styled.section`
   align-items: center;
   justify-content: center;
   background-color: ${(props) => props.theme.colors.gray[100]};
-  gap: clamp(2rem, 10vw, 15rem);
+  gap: clamp(2rem, 10vw, 10rem);
 
   & > div:first-child {
-    max-width: 30rem;
+    min-width: 22rem;
+    height: 667px;
+    width: 500px;
+    position: relative;
   }
 
   & > div:first-child > img {
-    width: 100%;
-    height: auto;
     object-fit: cover;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
     padding: 3rem 1.5rem;
     gap: 2rem;
   }
@@ -28,6 +29,11 @@ export const AboutContainer = styled.section`
   @media (max-width: 750px) {
     flex-direction: column;
     padding: 2rem 1rem;
+
+    & > div:first-child {
+      max-width: 350px;
+      max-height: 466px;
+    }
   }
 `
 

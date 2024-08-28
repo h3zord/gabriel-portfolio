@@ -10,6 +10,7 @@ import {
   EmblaSlide,
   EmblaViewport,
 } from './styles'
+import { imageKitLoader } from '@/utils/image-kit'
 
 interface EmblaCarouselProps {
   photoId: string
@@ -40,9 +41,10 @@ export function EmblaCarousel({ photoId }: EmblaCarouselProps) {
           {exploreWork.map((photo) => (
             <EmblaSlide key={photo.id}>
               <Image
+                loader={imageKitLoader}
                 src={photo.path}
-                width={2500}
-                height={3125}
+                width={597}
+                height={802}
                 alt="Explore work image"
               />
             </EmblaSlide>

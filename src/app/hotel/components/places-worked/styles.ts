@@ -17,7 +17,7 @@ export const PlacesWorkedContainer = styled.section`
     color: ${(props) => props.theme.colors.black};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
     padding: 3rem 1.5rem;
     gap: 3rem;
   }
@@ -32,6 +32,7 @@ export const PlacesWorkedContent = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
+  max-width: 110rem;
 
   & > div {
     max-width: 25rem;

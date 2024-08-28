@@ -21,9 +21,12 @@ export const Content = styled(Dialog.Content)`
   background-color: ${(props) => props.theme.colors.white};
 
   @media (max-width: 750px) {
-    padding: 2rem;
     width: 100vw;
     height: 100vh;
+  }
+
+  @media (max-width: 414px) {
+    padding: 1rem;
   }
 `
 

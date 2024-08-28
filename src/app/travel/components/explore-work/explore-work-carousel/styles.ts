@@ -15,18 +15,28 @@ export const EmblaContainer = styled.div`
 `
 
 export const EmblaSlide = styled.div`
-  flex: 0 0 40%;
-  min-width: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20%;
-  margin-left: 20%;
+  flex: 0 0 35vw;
+  margin-right: 35vw;
 
   & > img {
+    min-width: 597px;
+    min-height: 802px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 834px) {
+    flex: 0 0 75vw;
+
+    & > img {
+      min-width: auto;
+      min-height: auto;
+    }
+  }
+
+  @media (max-width: 414px) {
+    flex: 0 0 90vw;
   }
 `
 
@@ -43,5 +53,9 @@ export const CarouselButtons = styled.button<{ $direction: 'prev' | 'next' }>`
 
   &:hover {
     color: ${(props) => props.theme.colors.gray[100]};
+  }
+
+  @media (max-width: 414px) {
+    display: none;
   }
 `

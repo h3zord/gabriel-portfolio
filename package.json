@@ -15,6 +15,7 @@
     "@radix-ui/react-visually-hidden": "^1.1.0",
     "embla-carousel-react": "^8.1.8",
     "framer-motion": "^11.3.24",
+    "imagekitio-next": "^1.0.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",

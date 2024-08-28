@@ -52,12 +52,10 @@ export const ContactFormContainer = styled.form`
   }
 
   @media (max-width: 750px) {
+    margin-top: 2rem;
+
     & > div > div {
       flex-direction: column;
-    }
-
-    textarea {
-      height: 9rem;
     }
   }
 `

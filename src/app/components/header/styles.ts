@@ -1,16 +1,15 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const HeaderContainer = styled.header<{
   $headerTheme: 'dark' | 'white'
 }>`
   position: absolute;
   z-index: 9999;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
   width: 100vw;
   max-width: 110rem;
   margin: auto;
@@ -39,7 +38,7 @@ export const HeaderContainer = styled.header<{
     }
   }
 
-  @media (max-width: 62.5rem) {
+  @media (max-width: 834px) {
     padding: 2.5rem 3rem;
 
     & > a:nth-child(3) {
@@ -53,7 +52,7 @@ export const NavContainer = styled.nav`
   gap: 2rem;
   color: inherit;
 
-  @media (max-width: 62.5rem) {
+  @media (max-width: 834px) {
     display: none;
   }
 `
@@ -95,7 +94,7 @@ export const BurguerButton = styled.button`
     color: ${(props) => props.theme.colors.black};
   }
 
-  @media (min-width: 62.5rem) {
+  @media (min-width: 834px) {
     display: none;
   }
 `

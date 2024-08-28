@@ -1,7 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { LatestWorksContainer, LatestWorksContent } from './styles'
 import { latestWorks } from '@/data'
+import { imageKitLoader } from '@/utils/image-kit'
 
 export function LatestWorks() {
   return (
@@ -13,9 +16,11 @@ export function LatestWorks() {
           <Link href={`/hotel/${work.id}`} key={work.id}>
             <Image
               src={work.coverPicture.path}
-              width={work.coverPicture.width}
-              height={work.coverPicture.height}
+              loader={imageKitLoader}
               alt="Latest work"
+              width={523}
+              height={688}
+              // sizes="(max-width: 414px) 382px, (max-width: 750px) 640px, (max-width: 834px) 251px"
             />
 
             <p>{work.title}</p>

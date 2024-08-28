@@ -1,15 +1,19 @@
+'use client'
+
 import Image from 'next/image'
 import { AboutContainer, AboutContent, DescriptionContainer } from './styles'
+import { imageKitLoader } from '@/utils/image-kit'
 
 export function About() {
   return (
     <AboutContainer>
       <div>
         <Image
-          src="/assets/about-image-hotel.jpeg"
-          width={1536}
-          height={2048}
+          loader={imageKitLoader}
+          src="about-image-hotel.jpg"
           alt="About image"
+          fill
+          // sizes="(max-width: 750px) 350px, (max-width: 834px) 400px, 400px"
         />
       </div>
 

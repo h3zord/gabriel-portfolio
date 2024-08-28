@@ -21,9 +21,11 @@ export const FooterContainer = styled.footer`
 
   & > a {
     line-height: 0;
+    cursor: pointer;
   }
 
   & > div > a {
+    cursor: pointer;
     font-family: ${(props) => props.theme.fonts.secondary};
     color: ${(props) => props.theme.colors.black};
     font-size: ${(props) => props.theme.fontSizes.xsm};
@@ -33,12 +35,12 @@ export const FooterContainer = styled.footer`
     text-decoration: underline;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
     padding: 3.5rem 1.5rem;
   }
 
   @media (max-width: 750px) {
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;

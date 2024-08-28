@@ -42,7 +42,7 @@ export const ContactContent = styled.div`
     max-width: 23rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
     margin-top: 1.5rem;
     gap: 1rem;
   }
