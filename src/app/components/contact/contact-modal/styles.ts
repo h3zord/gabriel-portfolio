@@ -43,6 +43,11 @@ export const Close = styled(Dialog.Close)`
   &:hover {
     color: ${(props) => props.theme.colors.black};
   }
+
+  @media (max-width: 450px) {
+    top: 40px;
+    right: 40px;
+  }
 `
 
 export const Title = styled(Dialog.Title)`
