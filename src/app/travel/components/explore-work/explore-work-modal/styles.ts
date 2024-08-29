@@ -13,17 +13,19 @@ export const Overlay = styled(Dialog.Overlay)`
 `
 export const Content = styled(Dialog.Content)`
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100vw;
-  padding: 4rem 0;
+  height: 100vh;
 `
 
 export const Close = styled(Dialog.Close)`
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 40px;
+  right: 40px;
   border: none;
   background-color: transparent;
   color: ${(props) => props.theme.colors.gray[400]};
@@ -32,5 +34,9 @@ export const Close = styled(Dialog.Close)`
 
   &:hover {
     color: ${(props) => props.theme.colors.gray[100]};
+  }
+
+  @media (max-width: 450px) {
+    right: 10px;
   }
 `

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 export const LatestWorkDetailsContainer = styled.main`
   width: 100vw;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.gray[100]};
 `
 
 export const LatestWorkDetailsCover = styled.div`
@@ -27,7 +27,7 @@ export const LatestWorkDetailsCover = styled.div`
     max-width: 25rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
     & > h3 {
       font-size: ${(props) => props.theme.fontSizes.xxmd};
       left: 5vw;
@@ -45,30 +45,26 @@ export const LatestWorkPicturesContainer = styled.section`
   padding: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   max-width: 110rem;
   margin: 0 auto;
 
-  & > img {
-    width: 100%;
-    max-height: 42rem;
+  & > div {
+    aspect-ratio: 3/4;
+    position: relative;
+  }
+
+  & > div > img {
     object-fit: cover;
   }
 
   @media (max-width: 834px) {
     padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-
-    & > img {
-      max-height: 33rem;
-    }
   }
 
-  @media (max-width: 414px) {
-    & > img {
-      max-height: 20rem;
-    }
+  @media (max-width: 450px) {
+    gap: 0.5rem;
   }
 `
 

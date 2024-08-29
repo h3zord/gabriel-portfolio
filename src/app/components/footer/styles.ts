@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   padding: 4.5rem 2rem;
-  background-color: ${(props) => props.theme.colors.gray[100]};
+  background-color: ${(props) => props.theme.colors.white};
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -16,7 +16,6 @@ export const FooterContainer = styled.footer`
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    width: 13rem;
   }
 
   & > a {

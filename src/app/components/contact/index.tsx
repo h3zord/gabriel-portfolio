@@ -3,7 +3,7 @@ import { ContactModal } from './contact-modal'
 import { ContactContainer, ContactContent } from './styles'
 
 interface ContactTheme {
-  contactTheme: 'dark' | 'white'
+  contactTheme: 'dark' | 'gray'
 }
 
 export function Contact({ contactTheme }: ContactTheme) {

@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import Image from 'next/image'
 import { GrNext, GrPrevious } from 'react-icons/gr'
 import { exploreWork } from '@/data'
-import Image from 'next/image'
+import { imageKitLoader } from '@/utils/image-kit'
 import {
   CarouselButtons,
   Embla,
@@ -10,7 +11,6 @@ import {
   EmblaSlide,
   EmblaViewport,
 } from './styles'
-import { imageKitLoader } from '@/utils/image-kit'
 
 interface EmblaCarouselProps {
   photoId: string
@@ -43,14 +43,17 @@ export function EmblaCarousel({ photoId }: EmblaCarouselProps) {
               <Image
                 loader={imageKitLoader}
                 src={photo.path}
-                width={597}
-                height={802}
+                fill
                 alt="Explore work image"
+                placeholder="blur"
+                blurDataURL={photo.blurUrl}
+                sizes="(max-width: 450px) 403px, (max-width: 834px) 581.797px, (max-width: 1100px) 658px, 1080px"
               />
             </EmblaSlide>
           ))}
         </EmblaContainer>
       </EmblaViewport>
+
       <CarouselButtons $direction="prev" onClick={scrollPrev}>
         <GrPrevious size={30} />
       </CarouselButtons>

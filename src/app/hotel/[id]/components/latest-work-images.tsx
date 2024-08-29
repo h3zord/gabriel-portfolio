@@ -54,6 +54,8 @@ export function LatestWorkImages({ id }: LatestWorkImagesProps) {
           fill
           priority
           sizes="100vw"
+          placeholder="blur"
+          blurDataURL={findedLatestWork.mainPicture.blurUrl}
         />
 
         <h3>{findedLatestWork?.title}</h3>
@@ -61,15 +63,17 @@ export function LatestWorkImages({ id }: LatestWorkImagesProps) {
 
       <LatestWorkPicturesContainer>
         {findedLatestWork?.pictureList?.map((picture) => (
-          <Image
-            loader={imageKitLoader}
-            key={picture.path}
-            src={picture.path}
-            width={515}
-            height={672}
-            alt="Latest work pictures"
-            // sizes="(max-width: 414px) 187px, (max-width: 834px) 397px"
-          />
+          <div key={picture.path}>
+            <Image
+              loader={imageKitLoader}
+              src={picture.path}
+              fill
+              alt="Latest work pictures"
+              placeholder="blur"
+              blurDataURL={picture.blurUrl}
+              sizes="(max-width: 450px) 205px, (max-width: 834px) 393px, 1080px"
+            />
+          </div>
         ))}
       </LatestWorkPicturesContainer>
 

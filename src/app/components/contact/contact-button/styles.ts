@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 
-export const ContactButton = styled.button<{ $buttonTheme: 'dark' | 'white' }>`
+export const ContactButton = styled.button<{ $buttonTheme: 'dark' | 'gray' }>`
   background-color: transparent;
   display: flex;
   align-items: center;

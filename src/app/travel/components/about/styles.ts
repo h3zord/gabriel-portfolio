@@ -12,7 +12,7 @@ export const AboutContainer = styled.section`
 
   & > div:last-child {
     min-width: 22rem;
-    height: 667px;
+    height: 666.666px;
     width: 500px;
     position: relative;
   }
@@ -31,8 +31,9 @@ export const AboutContainer = styled.section`
     padding: 2rem 1rem;
 
     & > div:last-child {
-      max-width: 350px;
-      max-height: 466px;
+      width: 320px;
+      height: 426.666px;
+      min-width: auto;
     }
   }
 `

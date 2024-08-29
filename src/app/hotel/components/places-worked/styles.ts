@@ -2,13 +2,13 @@
 
 import styled from 'styled-components'
 
-export const PlacesWorkedContainer = styled.section`
+export const OurServicesContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 4rem;
   padding: 3.5rem 2rem;
-  background-color: ${(props) => props.theme.colors.gray[100]};
+  background-color: ${(props) => props.theme.colors.white};
 
   & > h3 {
     font-size: ${(props) => props.theme.fontSizes.lg};
@@ -28,7 +28,7 @@ export const PlacesWorkedContainer = styled.section`
   }
 `
 
-export const PlacesWorkedContent = styled.div`
+export const OurServicesContent = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;

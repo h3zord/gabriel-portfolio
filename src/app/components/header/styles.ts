@@ -10,9 +10,10 @@ export const HeaderContainer = styled.header<{
   position: absolute;
   z-index: 9999;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
   max-width: 110rem;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +26,6 @@ export const HeaderContainer = styled.header<{
 
   & > a {
     display: flex;
-    width: 10.5rem;
     font-size: ${(props) => props.theme.fontSizes.sm};
 
     &:nth-child(1) {
@@ -94,7 +94,7 @@ export const BurguerButton = styled.button`
     color: ${(props) => props.theme.colors.black};
   }
 
-  @media (min-width: 834px) {
+  @media (min-width: 835px) {
     display: none;
   }
 `

@@ -3,20 +3,20 @@
 import styled from 'styled-components'
 
 export const ContactContainer = styled.section<{
-  $contactTheme: 'dark' | 'white'
+  $contactTheme: 'dark' | 'gray'
 }>`
   padding: 2.5rem 2rem;
   display: flex;
   justify-content: center;
   color: ${(props) =>
     props.$contactTheme === 'dark'
-      ? props.theme.colors.white
+      ? props.theme.colors.gray[100]
       : props.theme.colors.black};
 
   background-color: ${(props) =>
     props.$contactTheme === 'dark'
       ? props.theme.colors.black
-      : props.theme.colors.white};
+      : props.theme.colors.gray[100]};
 
   @media (max-width: 768px) {
     padding: 1.5rem 1rem;

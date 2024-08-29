@@ -7,14 +7,14 @@ export const AboutContainer = styled.section`
   padding: 3.5rem 2rem;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.theme.colors.gray[100]};
+  background-color: ${(props) => props.theme.colors.white};
   gap: clamp(2rem, 10vw, 10rem);
 
   & > div:first-child {
-    min-width: 22rem;
-    height: 667px;
-    width: 500px;
     position: relative;
+    height: 666.666px;
+    width: 500px;
+    min-width: 25rem;
   }
 
   & > div:first-child > img {
@@ -31,8 +31,9 @@ export const AboutContainer = styled.section`
     padding: 2rem 1rem;
 
     & > div:first-child {
-      max-width: 350px;
-      max-height: 466px;
+      width: 320px;
+      height: 426.666px;
+      min-width: auto;
     }
   }
 `
@@ -56,7 +57,6 @@ export const AboutContent = styled.div`
 
     & > h3 > div {
       margin: 0 auto;
-      margin-top: 0.5rem;
     }
   }
 `

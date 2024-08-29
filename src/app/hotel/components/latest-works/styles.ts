@@ -4,11 +4,7 @@ import styled from 'styled-components'
 
 export const LatestWorksContainer = styled.section`
   padding: 3.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: ${(props) => props.theme.colors.white};
-  gap: 4rem;
+  background-color: ${(props) => props.theme.colors.gray[100]};
 
   & > h3 {
     font-size: ${(props) => props.theme.fontSizes.lg};
@@ -18,12 +14,14 @@ export const LatestWorksContainer = styled.section`
 
   @media (max-width: 834px) {
     padding: 3rem 1.5rem;
-    gap: 3rem;
   }
 
   @media (max-width: 750px) {
+    padding: 3rem;
+  }
+
+  @media (max-width: 450px) {
     padding: 2rem 1rem;
-    gap: 2rem;
   }
 `
 
@@ -32,14 +30,18 @@ export const LatestWorksContent = styled.div`
   grid-template-columns: repeat(3, 1fr);
   max-width: 110rem;
   gap: 2rem;
+  margin: 4rem auto 0;
 
   & > a {
     cursor: pointer;
   }
 
-  & > a > img {
-    width: 100%;
-    max-height: 43rem;
+  & > a > div {
+    aspect-ratio: 3/4;
+    position: relative;
+  }
+
+  & > a > div > img {
     object-fit: cover;
   }
 
@@ -49,19 +51,18 @@ export const LatestWorksContent = styled.div`
     margin-top: 1rem;
   }
 
-  & > a:hover {
-    & > img {
-      opacity: 0.7;
-      transition: opacity 0.2s;
+  @media (min-width: 834px) {
+    & > a:hover {
+      & > div > img {
+        opacity: 0.7;
+        transition: opacity 0.2s;
+      }
     }
   }
 
   @media (max-width: 834px) {
+    margin-top: 3rem;
     gap: 1rem;
-
-    & > a > img {
-      max-height: 23rem;
-    }
 
     & > a > p {
       margin-top: 0.5rem;
@@ -69,17 +70,8 @@ export const LatestWorksContent = styled.div`
   }
 
   @media (max-width: 750px) {
+    margin-top: 2rem;
     grid-template-columns: 1fr;
     gap: 2rem;
-
-    & > a > img {
-      max-height: 35rem;
-    }
-  }
-
-  @media (max-width: 414px) {
-    & > a > img {
-      max-height: 30rem;
-    }
   }
 `

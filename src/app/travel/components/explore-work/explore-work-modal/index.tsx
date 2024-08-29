@@ -29,6 +29,10 @@ export function ExploreWorkModal({ children, photoId }: ContactModalProps) {
             <Dialog.Title>Explore Work Pictures</Dialog.Title>
           </VisuallyHidden.Root>
 
+          <VisuallyHidden.Root>
+            <Dialog.Description>Pictures List</Dialog.Description>
+          </VisuallyHidden.Root>
+
           <EmblaCarousel photoId={photoId} />
         </Content>
       </Dialog.Portal>

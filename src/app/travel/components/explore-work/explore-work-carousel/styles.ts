@@ -10,33 +10,43 @@ export const Embla = styled.div`
 export const EmblaViewport = styled.div``
 
 export const EmblaContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 70vw;
   height: 85vh;
-`
 
-export const EmblaSlide = styled.div`
-  flex: 0 0 35vw;
-  margin-right: 35vw;
-
-  & > img {
-    min-width: 597px;
-    min-height: 802px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  @media (max-width: 1100px) {
+    grid-auto-columns: 80vw;
   }
 
   @media (max-width: 834px) {
-    flex: 0 0 75vw;
-
-    & > img {
-      min-width: auto;
-      min-height: auto;
-    }
+    grid-auto-columns: 85vw;
   }
 
-  @media (max-width: 414px) {
-    flex: 0 0 90vw;
+  @media (max-width: 450px) {
+    grid-auto-columns: 95vw;
+    height: 80vh;
+  }
+`
+
+export const EmblaSlide = styled.div`
+  margin-right: 31vw;
+  position: relative;
+
+  & > img {
+    object-fit: cover;
+  }
+
+  @media (max-width: 1100px) {
+    margin-right: 21vw;
+  }
+
+  @media (max-width: 834px) {
+    margin-right: 16vw;
+  }
+
+  @media (max-width: 450px) {
+    margin-right: 6vw;
   }
 `
 
@@ -55,7 +65,7 @@ export const CarouselButtons = styled.button<{ $direction: 'prev' | 'next' }>`
     color: ${(props) => props.theme.colors.gray[100]};
   }
 
-  @media (max-width: 414px) {
+  @media (max-width: 450px) {
     display: none;
   }
 `

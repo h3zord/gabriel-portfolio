@@ -1,11 +1,11 @@
-import { PlacesWorkedContainer, PlacesWorkedContent } from './styles'
+import { OurServicesContainer, OurServicesContent } from './styles'
 
-export function PlacesWorked() {
+export function OurServices() {
   return (
-    <PlacesWorkedContainer>
+    <OurServicesContainer>
       <h3>Our Services</h3>
 
-      <PlacesWorkedContent>
+      <OurServicesContent>
         <div>
           <h4>Photography</h4>
 
@@ -35,7 +35,7 @@ export function PlacesWorked() {
             projects.
           </p>
         </div>
-      </PlacesWorkedContent>
-    </PlacesWorkedContainer>
+      </OurServicesContent>
+    </OurServicesContainer>
   )
 }

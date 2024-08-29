@@ -14,14 +14,17 @@ export function LatestWorks() {
       <LatestWorksContent>
         {latestWorks.map((work) => (
           <Link href={`/hotel/${work.id}`} key={work.id}>
-            <Image
-              src={work.coverPicture.path}
-              loader={imageKitLoader}
-              alt="Latest work"
-              width={523}
-              height={688}
-              // sizes="(max-width: 414px) 382px, (max-width: 750px) 640px, (max-width: 834px) 251px"
-            />
+            <div>
+              <Image
+                src={work.coverPicture.path}
+                loader={imageKitLoader}
+                alt="Latest work"
+                fill
+                placeholder="blur"
+                blurDataURL={work.coverPicture.blurUrl}
+                sizes="(max-width: 450px) 418px, (max-width: 750px) 654px, (max-width: 834px) 251.328px, 1080px"
+              />
+            </div>
 
             <p>{work.title}</p>
           </Link>
