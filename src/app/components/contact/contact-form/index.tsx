@@ -109,7 +109,7 @@ export function ContactForm({ setOpen }: ContactFormProps) {
         <textarea rows={5} {...register('message')} />
       </div>
 
-      <ContactButton type="submit" $buttonTheme="white" disabled={isSubmitting}>
+      <ContactButton type="submit" $buttonTheme="gray" disabled={isSubmitting}>
         {isSubmitting ? 'Submitting...' : 'Send'}
       </ContactButton>
     </ContactFormContainer>
