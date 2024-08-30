@@ -14,7 +14,7 @@ interface ContactModalProps {
   setIsOpen: Dispatch<SetStateAction<boolean>>
 }
 
-export function BurguerMenu({
+export function BurguerMenuModal({
   children,
   isOpen,
   setIsOpen,
@@ -32,7 +32,11 @@ export function BurguerMenu({
       <Dialog.Portal>
         <Content onInteractOutside={(ev) => ev.preventDefault()}>
           <VisuallyHidden asChild>
-            <Dialog.Title />
+            <Dialog.Title>Burguer Menu</Dialog.Title>
+          </VisuallyHidden>
+
+          <VisuallyHidden asChild>
+            <Dialog.Description>Select the section</Dialog.Description>
           </VisuallyHidden>
 
           <NavContainer onClick={handleNavContainer}>

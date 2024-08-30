@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog'
-import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import { ReactNode, useState } from 'react'
 import { Close, Content, Overlay } from './styles'
 import { IoClose } from 'react-icons/io5'
@@ -25,13 +25,13 @@ export function ExploreWorkModal({ children, photoId }: ContactModalProps) {
             <IoClose size={30} />
           </Close>
 
-          <VisuallyHidden.Root>
+          <VisuallyHidden asChild>
             <Dialog.Title>Explore Work Pictures</Dialog.Title>
-          </VisuallyHidden.Root>
+          </VisuallyHidden>
 
-          <VisuallyHidden.Root>
+          <VisuallyHidden asChild>
             <Dialog.Description>Pictures List</Dialog.Description>
-          </VisuallyHidden.Root>
+          </VisuallyHidden>
 
           <EmblaCarousel photoId={photoId} />
         </Content>

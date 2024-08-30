@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header<{
   color: ${(props) =>
     props.$headerTheme === 'dark'
       ? props.theme.colors.black
-      : props.theme.colors.gray[100]};
+      : props.theme.colors.white};
 
   & > a {
     display: flex;
@@ -71,7 +71,9 @@ export const Underlined = styled(motion.div)`
   bottom: -5px;
 `
 
-export const BurguerButton = styled.button`
+export const BurguerButton = styled.button<{
+  $burguerButtonTheme: 'dark' | 'white'
+}>`
   background: none;
   border: none;
   width: 3rem;
@@ -87,7 +89,10 @@ export const BurguerButton = styled.button`
   & > span {
     width: 30px;
     height: 3px;
-    background-color: ${(props) => props.theme.colors.gray[100]};
+    background-color: ${(props) =>
+      props.$burguerButtonTheme === 'dark'
+        ? props.theme.colors.black
+        : props.theme.colors.white};
   }
 
   & > svg {

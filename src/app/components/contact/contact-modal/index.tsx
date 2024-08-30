@@ -5,6 +5,7 @@ import { ReactNode, useState } from 'react'
 import { Close, Content, Overlay, Title } from './styles'
 import { IoClose } from 'react-icons/io5'
 import { ContactForm } from '../contact-form'
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 
 interface ContactModalProps {
   children: ReactNode
@@ -26,6 +27,10 @@ export function ContactModal({ children }: ContactModalProps) {
           </Close>
 
           <Title>Contact Me</Title>
+
+          <VisuallyHidden asChild>
+            <Dialog.Description>Fill the fields</Dialog.Description>
+          </VisuallyHidden>
 
           <ContactForm setOpen={setOpen} />
         </Content>

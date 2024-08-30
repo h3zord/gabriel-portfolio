@@ -71,7 +71,7 @@ export function LatestWorkImages({ id }: LatestWorkImagesProps) {
               alt="Latest work pictures"
               placeholder="blur"
               blurDataURL={picture.blurUrl}
-              sizes="(max-width: 450px) 205px, (max-width: 834px) 393px, 1080px"
+              sizes="(max-width: 450px) 205px, (max-width: 834px) 385px, 1080px"
             />
           </div>
         ))}

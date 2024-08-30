@@ -38,5 +38,6 @@ export const Close = styled(Dialog.Close)`
 
   @media (max-width: 450px) {
     right: 10px;
+    top: 50px;
   }
 `

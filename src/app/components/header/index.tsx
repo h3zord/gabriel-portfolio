@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { FaInstagram } from 'react-icons/fa'
 import { usePathname } from 'next/navigation'
-import { BurguerMenu } from './burguer-menu'
+import { BurguerMenuModal } from './burguer-menu-modal'
 import { useState } from 'react'
 import { IoClose } from 'react-icons/io5'
 import {
@@ -50,8 +50,13 @@ export function Header() {
         <FaInstagram size={20} />
       </Link>
 
-      <BurguerMenu isOpen={isOpen} setIsOpen={setIsOpen}>
-        <BurguerButton onClick={handleBurguerButton}>
+      <BurguerMenuModal isOpen={isOpen} setIsOpen={setIsOpen}>
+        <BurguerButton
+          onClick={handleBurguerButton}
+          $burguerButtonTheme={
+            isImprintRoute || isDataSecurityRoute ? 'dark' : 'white'
+          }
+        >
           {isOpen ? (
             <IoClose size={34} />
           ) : (
@@ -62,7 +67,7 @@ export function Header() {
             </>
           )}
         </BurguerButton>
-      </BurguerMenu>
+      </BurguerMenuModal>
     </HeaderContainer>
   )
 }
