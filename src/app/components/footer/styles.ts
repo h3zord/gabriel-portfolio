@@ -7,31 +7,16 @@ export const FooterContainer = styled.footer`
   background-color: ${(props) => props.theme.colors.white};
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   & > div {
     color: ${(props) => props.theme.colors.black};
     font-size: ${(props) => props.theme.fontSizes.md};
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
   }
 
   & > a {
     line-height: 0;
     cursor: pointer;
-  }
-
-  & > div > a {
-    cursor: pointer;
-    font-family: ${(props) => props.theme.fonts.secondary};
-    color: ${(props) => props.theme.colors.black};
-    font-size: ${(props) => props.theme.fontSizes.xsm};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: underline;
   }
 
   @media (max-width: 834px) {
@@ -42,11 +27,6 @@ export const FooterContainer = styled.footer`
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-
-    & > a {
-      order: 3;
-      margin-top: 0.5rem;
-    }
+    gap: 1.5rem;
   }
 `

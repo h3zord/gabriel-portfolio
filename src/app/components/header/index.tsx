@@ -19,19 +19,12 @@ export function Header() {
 
   const pathName = usePathname()
 
-  const isImprintRoute = pathName === '/imprint'
-  const isDataSecurityRoute = pathName === '/data-security'
-
   function handleBurguerButton() {
     setIsOpen((prevState) => !prevState)
   }
 
   return (
-    <HeaderContainer
-      $headerTheme={
-        isImprintRoute || isDataSecurityRoute || isOpen ? 'dark' : 'white'
-      }
-    >
+    <HeaderContainer $headerTheme="white">
       <Link href="/hotel">Gabriel Brustolin</Link>
 
       <NavContainer>
@@ -53,9 +46,7 @@ export function Header() {
       <BurguerMenuModal isOpen={isOpen} setIsOpen={setIsOpen}>
         <BurguerButton
           onClick={handleBurguerButton}
-          $burguerButtonTheme={
-            isImprintRoute || isDataSecurityRoute ? 'dark' : 'white'
-          }
+          $burguerButtonTheme="white"
         >
           {isOpen ? (
             <IoClose size={34} />

@@ -10,11 +10,6 @@ export function Footer() {
       <Link href="https://www.instagram.com/gabzieg/" target="_blank">
         <FaInstagram size={20} />
       </Link>
-
-      <div>
-        <Link href="/imprint">Imprint</Link>
-        <Link href="/data-security">Privacy Policy</Link>
-      </div>
     </FooterContainer>
   )
 }
