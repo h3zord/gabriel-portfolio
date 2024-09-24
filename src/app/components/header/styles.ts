@@ -18,6 +18,7 @@ export const HeaderContainer = styled.header<{
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 4rem;
+  border: 1px solid red;
 
   color: ${(props) =>
     props.$headerTheme === 'dark'
@@ -27,6 +28,7 @@ export const HeaderContainer = styled.header<{
   & > a {
     display: flex;
     font-size: ${(props) => props.theme.fontSizes.sm};
+    min-width: 11rem;
 
     &:nth-child(1) {
       cursor: pointer;
@@ -38,7 +40,7 @@ export const HeaderContainer = styled.header<{
     }
   }
 
-  @media (max-width: 834px) {
+  @media (max-width: 950px) {
     padding: 2.5rem 3rem;
 
     & > a:nth-child(3) {
@@ -52,7 +54,7 @@ export const NavContainer = styled.nav`
   gap: 2rem;
   color: inherit;
 
-  @media (max-width: 834px) {
+  @media (max-width: 950px) {
     display: none;
   }
 `
@@ -99,7 +101,7 @@ export const BurguerButton = styled.button<{
     color: ${(props) => props.theme.colors.black};
   }
 
-  @media (min-width: 835px) {
+  @media (min-width: 951px) {
     display: none;
   }
 `
