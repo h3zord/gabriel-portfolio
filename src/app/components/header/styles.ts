@@ -18,7 +18,6 @@ export const HeaderContainer = styled.header<{
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 4rem;
-  border: 1px solid red;
 
   color: ${(props) =>
     props.$headerTheme === 'dark'
