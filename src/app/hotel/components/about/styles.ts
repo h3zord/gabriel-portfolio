@@ -64,7 +64,6 @@ export const AboutContent = styled.div`
 
     & > h3 > div {
       margin: 0 auto;
-      width: 320px;
     }
   }
 `
