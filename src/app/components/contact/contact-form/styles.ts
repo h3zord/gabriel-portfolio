@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const ContactFormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   gap: 1.5rem;
 
   & > div > p {
@@ -56,6 +56,17 @@ export const ContactFormContainer = styled.form`
 
     & > div > div {
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 450px) {
+    input,
+    textarea {
+      padding: 0.5rem;
+    }
+
+    textarea {
+      height: 5rem;
     }
   }
 `

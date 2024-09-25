@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const ContactContainer = styled.section<{
   $contactTheme: 'dark' | 'gray'
 }>`
-  padding: 2.5rem 2rem;
+  padding: 3rem 2rem;
   display: flex;
   justify-content: center;
   color: ${(props) =>
@@ -18,12 +18,8 @@ export const ContactContainer = styled.section<{
       ? props.theme.colors.black
       : props.theme.colors.gray[100]};
 
-  @media (max-width: 768px) {
-    padding: 1.5rem 1rem;
-  }
-
-  @media (max-width: 750px) {
-    padding: 1rem 0.5rem;
+  @media (max-width: 900px) {
+    padding: 2rem 1rem;
   }
 `
 
@@ -33,17 +29,12 @@ export const ContactContent = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   & > h3 {
     font-weight: ${(props) => props.theme.weight.normal};
     font-size: ${(props) => props.theme.fontSizes.lg};
     text-align: center;
     max-width: 23rem;
-  }
-
-  @media (max-width: 834px) {
-    margin-top: 1.5rem;
-    gap: 1rem;
   }
 `

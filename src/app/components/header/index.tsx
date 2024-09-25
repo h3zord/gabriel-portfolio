@@ -24,7 +24,7 @@ export function Header() {
   }
 
   return (
-    <HeaderContainer $headerTheme="white">
+    <HeaderContainer $headerTheme={isOpen ? 'dark' : 'white'}>
       <Link href="/hotel">Gabriel Brustolin</Link>
 
       <NavContainer>

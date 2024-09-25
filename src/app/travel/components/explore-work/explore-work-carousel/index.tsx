@@ -47,7 +47,7 @@ export function EmblaCarousel({ photoId }: EmblaCarouselProps) {
                 alt="Explore work image"
                 placeholder="blur"
                 blurDataURL={photo.blurUrl}
-                sizes="(max-width: 450px) 400.500px, (max-width: 834px) 575.453px, (max-width: 1100px) 649px, 1080px"
+                sizes="(max-width: 450px) 401px, (max-width: 900px) 621px, (max-width: 1100px) 649px, 1080px"
               />
             </EmblaSlide>
           ))}

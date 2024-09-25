@@ -6,8 +6,8 @@ export const OurServicesContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 3rem 2rem;
   gap: 4rem;
-  padding: 3.5rem 2rem;
   background-color: ${(props) => props.theme.colors.white};
 
   & > h3 {
@@ -17,14 +17,9 @@ export const OurServicesContainer = styled.section`
     color: ${(props) => props.theme.colors.black};
   }
 
-  @media (max-width: 834px) {
-    padding: 3rem 1.5rem;
-    gap: 3rem;
-  }
-
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     padding: 2rem 1rem;
-    gap: 2rem;
+    gap: 3rem;
   }
 `
 
@@ -57,13 +52,9 @@ export const OurServicesContent = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 768px) {
-    column-gap: 1.5rem;
-  }
-
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    row-gap: 1.5rem;
+    row-gap: 2rem;
 
     & > div > h4 {
       margin-bottom: 0;

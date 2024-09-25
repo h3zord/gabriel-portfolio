@@ -22,7 +22,7 @@ export function LatestWorks() {
                 fill
                 placeholder="blur"
                 blurDataURL={work.coverPicture.blurUrl}
-                sizes="(max-width: 450px) 418px, (max-width: 750px) 654px, (max-width: 834px) 251.328px, 1080px"
+                sizes="(max-width: 450px) 410px, (max-width: 900px) 625px, 1080px"
               />
             </div>
 

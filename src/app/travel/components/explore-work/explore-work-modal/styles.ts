@@ -24,8 +24,8 @@ export const Content = styled(Dialog.Content)`
 
 export const Close = styled(Dialog.Close)`
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 30px;
+  right: 30px;
   border: none;
   background-color: transparent;
   color: ${(props) => props.theme.colors.gray[400]};

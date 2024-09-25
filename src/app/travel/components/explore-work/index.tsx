@@ -21,7 +21,7 @@ export function ExploreWork() {
                 alt="Explore work image"
                 placeholder="blur"
                 blurDataURL={photo.blurUrl}
-                sizes="(max-width: 450px) 204px, (max-width: 834px) 384px, (max-width) 367.328px, 1080px"
+                sizes="(max-width: 450px) 200px, (max-width: 900px) 420px, 1080px"
               />
             </div>
           </ExploreWorkModal>

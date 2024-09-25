@@ -19,7 +19,7 @@ export const EmblaContainer = styled.div`
     grid-auto-columns: 80vw;
   }
 
-  @media (max-width: 834px) {
+  @media (max-width: 900px) {
     grid-auto-columns: 85vw;
   }
 
@@ -41,7 +41,7 @@ export const EmblaSlide = styled.div`
     margin-right: 21vw;
   }
 
-  @media (max-width: 834px) {
+  @media (max-width: 900px) {
     margin-right: 16vw;
   }
 

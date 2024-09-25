@@ -20,20 +20,21 @@ export const Content = styled(Dialog.Content)`
   padding: 2.5rem;
   background-color: ${(props) => props.theme.colors.white};
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     width: 100vw;
     height: 100vh;
+    padding: 2rem;
   }
 
-  @media (max-width: 414px) {
-    padding: 1rem;
+  @media (max-width: 450px) {
+    padding: 2rem 1rem;
   }
 `
 
 export const Close = styled(Dialog.Close)`
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   border: none;
   background-color: transparent;
   color: ${(props) => props.theme.colors.gray[700]};
@@ -42,11 +43,6 @@ export const Close = styled(Dialog.Close)`
 
   &:hover {
     color: ${(props) => props.theme.colors.black};
-  }
-
-  @media (max-width: 450px) {
-    top: 40px;
-    right: 40px;
   }
 `
 

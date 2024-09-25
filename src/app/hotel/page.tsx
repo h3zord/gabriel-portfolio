@@ -1,7 +1,7 @@
 import { HotelIntroduction } from './components/hotel-introduction'
 import { About } from './components/about'
 import { LatestWorks } from './components/latest-works'
-import { OurServices } from './components/places-worked'
+import { OurServices } from './components/our-services'
 import { Contact } from '../components/contact'
 import { Footer } from '../components/footer'
 import { Metadata } from 'next'

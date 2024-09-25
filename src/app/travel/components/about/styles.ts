@@ -8,10 +8,10 @@ export const AboutContainer = styled.section`
   align-items: center;
   justify-content: center;
   background-color: ${(props) => props.theme.colors.black};
-  gap: clamp(2rem, 5vw, 10rem);
+  gap: clamp(2rem, 10vw, 10rem);
 
   & > div:last-child {
-    min-width: 22rem;
+    min-width: 18rem;
     height: 666.666px;
     width: 500px;
     position: relative;
@@ -21,19 +21,26 @@ export const AboutContainer = styled.section`
     object-fit: cover;
   }
 
-  @media (max-width: 834px) {
-    padding: 3rem 1.5rem;
+  @media (max-width: 950px) {
     gap: 2rem;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     padding: 2rem 1rem;
+    gap: 3rem;
 
+    & > div:last-child {
+      width: 420px;
+      height: 480px;
+      min-width: auto;
+    }
+  }
+
+  @media (max-width: 450px) {
     & > div:last-child {
       width: 320px;
       height: 426.666px;
-      min-width: auto;
     }
   }
 `
@@ -46,7 +53,7 @@ export const AboutContent = styled.div`
     max-width: 31rem;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     & > h3 {
       text-align: center;
       margin: 0 auto;
@@ -68,7 +75,7 @@ export const DescriptionContainer = styled.div`
     color: ${(props) => props.theme.colors.gray[100]};
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 900px) {
     max-width: 100vw;
   }
 `

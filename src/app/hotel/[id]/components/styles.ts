@@ -27,7 +27,7 @@ export const LatestWorkDetailsCover = styled.div`
     max-width: 25rem;
   }
 
-  @media (max-width: 834px) {
+  @media (max-width: 900px) {
     & > h3 {
       font-size: ${(props) => props.theme.fontSizes.xxmd};
       left: 5vw;
@@ -42,7 +42,7 @@ export const LatestWorkDetailsCover = styled.div`
 `
 
 export const LatestWorkPicturesContainer = styled.section`
-  padding: 3rem;
+  padding: 2.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -58,7 +58,7 @@ export const LatestWorkPicturesContainer = styled.section`
     object-fit: cover;
   }
 
-  @media (max-width: 834px) {
+  @media (max-width: 900px) {
     padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -70,20 +70,19 @@ export const LatestWorkPicturesContainer = styled.section`
 
 export const LatestWorkButtonsContainer = styled.div`
   display: flex;
-  padding: 3.5rem 2rem;
+  padding: 3rem 2rem;
   align-items: center;
   justify-content: space-between;
   font-size: ${(props) => props.theme.fontSizes.lg};
   font-weight: ${(props) => props.theme.weight.normal};
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     font-size: ${(props) => props.theme.fontSizes.xmd};
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
   }
 
   @media (max-width: 750px) {
     font-size: ${(props) => props.theme.fontSizes.md};
-    padding: 2rem 1rem;
   }
 `
 export const LatestWorkLink = styled(Link)<{ $direction: 'prev' | 'next' }>`
@@ -102,9 +101,9 @@ export const LatestWorkLink = styled(Link)<{ $direction: 'prev' | 'next' }>`
     color: ${(props) => props.theme.colors.black};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 750px) {
     & > svg {
-      min-width: 24px;
+      min-width: 22px;
     }
   }
 `

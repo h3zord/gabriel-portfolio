@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 
 export const LatestWorksContainer = styled.section`
-  padding: 3.5rem 2rem;
+  padding: 3rem 2rem;
   background-color: ${(props) => props.theme.colors.gray[100]};
 
   & > h3 {
@@ -12,15 +12,7 @@ export const LatestWorksContainer = styled.section`
     text-align: center;
   }
 
-  @media (max-width: 834px) {
-    padding: 3rem 1.5rem;
-  }
-
-  @media (max-width: 750px) {
-    padding: 3rem;
-  }
-
-  @media (max-width: 450px) {
+  @media (max-width: 900px) {
     padding: 2rem 1rem;
   }
 `
@@ -37,7 +29,9 @@ export const LatestWorksContent = styled.div`
   }
 
   & > a > div {
+    margin: 0 auto;
     aspect-ratio: 3/4;
+    max-height: 90vh;
     position: relative;
   }
 
@@ -51,7 +45,7 @@ export const LatestWorksContent = styled.div`
     margin-top: 1rem;
   }
 
-  @media (min-width: 834px) {
+  @media (min-width: 901px) {
     & > a:hover {
       & > div > img {
         opacity: 0.7;
@@ -60,18 +54,12 @@ export const LatestWorksContent = styled.div`
     }
   }
 
-  @media (max-width: 834px) {
-    margin-top: 3rem;
-    gap: 1rem;
-
-    & > a > p {
-      margin-top: 0.5rem;
-    }
-  }
-
-  @media (max-width: 750px) {
-    margin-top: 2rem;
+  @media (max-width: 900px) {
+    margin: 3rem auto 0;
     grid-template-columns: 1fr;
-    gap: 2rem;
+
+    & > a p {
+      text-align: center;
+    }
   }
 `
