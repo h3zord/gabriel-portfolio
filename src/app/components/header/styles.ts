@@ -93,6 +93,7 @@ export const BurguerButton = styled.button<{
   align-items: center;
   justify-content: center;
   line-height: 0;
+  border: 1px solid red;
   gap: 0.25rem;
 
   & > span {
