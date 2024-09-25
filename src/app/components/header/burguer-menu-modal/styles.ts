@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 export const Overlay = styled(Dialog.Overlay)`
-  background: rgba(0 0 0 / 0.85);
+  background-color: ${(props) => props.theme.colors.white};
   position: fixed;
   inset: 0;
   display: grid;

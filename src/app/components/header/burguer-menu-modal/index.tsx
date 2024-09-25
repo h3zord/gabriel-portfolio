@@ -3,7 +3,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import Link from 'next/link'
 import { Dispatch, ReactNode, SetStateAction } from 'react'
-import { Content, NavContainer, NavLink, Underlined } from './styles'
+import { Content, NavContainer, NavLink, Overlay, Underlined } from './styles'
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 import { usePathname } from 'next/navigation'
 import { FaInstagram } from 'react-icons/fa'
@@ -30,6 +30,8 @@ export function BurguerMenuModal({
       <Dialog.Trigger asChild>{children}</Dialog.Trigger>
 
       <Dialog.Portal>
+        <Overlay />
+
         <Content onInteractOutside={(ev) => ev.preventDefault()}>
           <VisuallyHidden asChild>
             <Dialog.Title>Burguer Menu</Dialog.Title>
