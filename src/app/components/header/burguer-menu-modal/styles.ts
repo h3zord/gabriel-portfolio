@@ -27,7 +27,7 @@ export const Content = styled(Dialog.Content)`
 
   & > a:last-child {
     margin-top: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 `
 

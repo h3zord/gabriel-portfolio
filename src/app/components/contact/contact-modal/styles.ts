@@ -27,7 +27,7 @@ export const Content = styled(Dialog.Content)`
   }
 
   @media (max-width: 450px) {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
   }
 `
 
@@ -43,6 +43,11 @@ export const Close = styled(Dialog.Close)`
 
   &:hover {
     color: ${(props) => props.theme.colors.black};
+  }
+
+  @media (max-width: 450px) {
+    top: 40px;
+    right: 40px;
   }
 `
 

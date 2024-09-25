@@ -48,7 +48,7 @@ export const HeaderContainer = styled.header<{
   }
 
   @media (max-width: 450px) {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 
     & > a:nth-child(3) {
       display: none;
